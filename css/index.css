@@ -122,3 +122,133 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+a {
+  font-family: "Stylish", sans-serif;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.display {
+  display: flex;
+}
+.text-center {
+  text-align: center;
+}
+.toggle-button {
+  display: none;
+}
+@media (max-width: 500px) {
+  .toggle-button {
+    position: fixed;
+    margin: 1.4rem;
+    width: 40px;
+    height: 12px;
+    right: 0;
+    z-index: 1;
+    display: flex;
+  }
+  .toggle-button span.one {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  .toggle-button span.two {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #ffffff;
+    margin-top: 12px;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #990033;
+}
+nav .logo {
+  font-size: 3rem;
+  margin: 1.4rem;
+  font-family: "Stylish", sans-serif;
+  color: #ffffff;
+}
+@media (max-width: 500px) {
+  nav .logo {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  nav .menu {
+    z-index: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: -100%;
+  }
+}
+@media (max-width: 500px) {
+  nav .data {
+    padding: 5rem 0 0 2rem;
+    text-align: left;
+  }
+}
+nav .data ul {
+  list-style: none;
+  display: flex;
+}
+@media (max-width: 500px) {
+  nav .data ul {
+    flex-direction: column;
+  }
+}
+nav .data ul li {
+  color: #ffffff;
+  font-size: 2.3rem;
+  margin: 0 2rem;
+}
+@media (max-width: 500px) {
+  nav .data ul li {
+    margin: 2rem 0;
+  }
+}
+nav .data ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav .data ul li a:hover {
+  color: #ff6666;
+}
+nav .data ul .active {
+  color: #ff6666;
+}
