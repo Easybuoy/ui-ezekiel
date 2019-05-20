@@ -28,3 +28,19 @@ toggleButton.addEventListener("click", () => {
 
   timeLineMax.reversed(!timeLineMax.reversed());
 });
+
+// Search Bar
+let search = document.querySelector(".search");
+search.addEventListener("click", () => {
+  let searchInput = document.querySelector(".search-input");
+
+  let body = document.querySelector("body");
+  if (searchInput === null) {
+    let input = document.createElement("input");
+    input.classList.add("search-input");
+    input.placeholder = "Search";
+    body.prepend(input);
+  } else {
+    body.removeChild(searchInput);
+  }
+});
