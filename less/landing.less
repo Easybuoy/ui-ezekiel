@@ -11,6 +11,7 @@
     height: 100vh;
     opacity: 0.8;
     background-size: 100% 100%;
+    // clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 
     .header-text {
       display: flex;
@@ -23,6 +24,126 @@
       align-items: center;
     }
   }
+
+  .courses {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    //   background-color: @secondaryColor;
+
+    h3 {
+      width: 100%;
+      margin: 1rem 0;
+      font-size: 4rem;
+    }
+
+    .card {
+      background-color: #d1e0e0;
+      width: 22%;
+      margin: 2rem 0;
+
+      .card-img {
+        width: 100%;
+        height: 200px;
+      }
+
+      .card-body {
+        h4 {
+          padding: 1rem 2rem 2rem 3rem;
+          margin: 1rem 0;
+          font-weight: bolder;
+        }
+
+        p {
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
+
+        h5 {
+          color: @primaryColor;
+          padding: 1rem 0 2rem 3rem;
+          font-size: 2rem;
+          font-family: @fontFamily2;
+        }
+
+        .lecturer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 1rem;
+
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+
+          h6 {
+            font-family: @fontFamily2;
+            font-size: 2rem;
+            color: @primaryColor;
+
+          }
+        }
+      }
+
+      &:hover {
+        -webkit-box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
+        color: @whiteColor;
+        background-color: @primaryColor;
+        .card-body {
+            h5 {
+                color: @whiteColor;
+            }
+            .lecturer h6 {
+                color: @whiteColor;
+            }
+        }
+      }
+    }
+  }
+
+//   .volunteer {
+//       display: flex;
+//       margin: 0 auto;
+//       width: 100%;
+//       .volunteer-img {
+//           width: 50%;
+//           // padding: 2rem 2rem;
+//           img {
+//               width: 100%;
+//               height: 100vh;
+//           }
+//       }
+//       .volunteer-form {
+//           background-color: @primaryColor;
+//           width: 50%;
+//           padding: 0 2rem;
+
+//           h3 {
+//               margin: 2rem 0;
+//               color: @whiteColor;
+//           }
+
+//           form {
+//               background-color: @whiteColor;
+//               width: 80%;
+//               height: 45rem;
+//               margin: 0 auto;
+//               text-align: center;
+
+//               input {
+//                   width: 50%;
+//                   padding: 1rem;
+//                   font-family: @fontFamily2;
+//                   font-size: 1rem;
+//               }
+//           }
+//       }
+//   }
 }
 
 .button {
