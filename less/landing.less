@@ -6,7 +6,13 @@
   }
   header {
     width: 100%;
-    background-image: url("../img/headerimg.jpg");
+    // background-image: url("../img/headerimg.jpg");
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url("../img/headerimg.jpg");
     background-repeat: no-repeat;
     height: 100vh;
     opacity: 0.8;
@@ -38,7 +44,7 @@
     }
 
     .card {
-      background-color: #d1e0e0;
+      
       width: 22%;
       margin: 2rem 0;
 
@@ -48,6 +54,7 @@
       }
 
       .card-body {
+        background-color: #d1e0e0;
         h4 {
           padding: 1rem 2rem 2rem 3rem;
           margin: 1rem 0;
@@ -92,8 +99,9 @@
         box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
         .transition(0.5s, 1);
         color: @whiteColor;
-        background-color: @primaryColor;
+
         .card-body {
+          background-color: @primaryColor;
           h5 {
             color: @whiteColor;
           }
@@ -104,45 +112,6 @@
       }
     }
   }
-
-  //   .volunteer {
-  //       display: flex;
-  //       margin: 0 auto;
-  //       width: 100%;
-  //       .volunteer-img {
-  //           width: 50%;
-  //           // padding: 2rem 2rem;
-  //           img {
-  //               width: 100%;
-  //               height: 100vh;
-  //           }
-  //       }
-  //       .volunteer-form {
-  //           background-color: @primaryColor;
-  //           width: 50%;
-  //           padding: 0 2rem;
-
-  //           h3 {
-  //               margin: 2rem 0;
-  //               color: @whiteColor;
-  //           }
-
-  //           form {
-  //               background-color: @whiteColor;
-  //               width: 80%;
-  //               height: 45rem;
-  //               margin: 0 auto;
-  //               text-align: center;
-
-  //               input {
-  //                   width: 50%;
-  //                   padding: 1rem;
-  //                   font-family: @fontFamily2;
-  //                   font-size: 1rem;
-  //               }
-  //           }
-  //       }
-  //   }
 
   .testimony {
     display: flex;
@@ -186,7 +155,12 @@
 
   .fun-facts {
     display: flex;
-    background-image: url("../img/fun-fact.jpg");
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url("../img/fun-fact.jpg");
     width: 100%;
     background-repeat: no-repeat;
     height: 400px;
@@ -204,12 +178,12 @@
       color: @primaryColor;
       margin: 0 auto;
       text-align: center;
+      img {
+        width: 200px;
+        height: 200px;
+        margin: 0;
+      }
     }
-    // h2 {
-    //   position: relative;
-    //   z-index: 2;
-    //   opacity: 1;
-    // }
   }
 }
 

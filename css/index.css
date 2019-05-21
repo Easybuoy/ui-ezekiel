@@ -142,6 +142,7 @@ h2 {
 h3 {
   font-size: 2.8rem;
   font-family: "Stylish", sans-serif;
+  color: #990033;
 }
 h4 {
   font-size: 2rem;
@@ -281,7 +282,7 @@ nav .data ul .active {
 }
 .landing header {
   width: 100%;
-  background-image: url("../img/headerimg.jpg");
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../img/headerimg.jpg");
   background-repeat: no-repeat;
   height: 100vh;
   opacity: 0.8;
@@ -310,13 +311,15 @@ nav .data ul .active {
   font-size: 4rem;
 }
 .landing .courses .card {
-  background-color: #d1e0e0;
   width: 22%;
   margin: 2rem 0;
 }
 .landing .courses .card .card-img {
   width: 100%;
   height: 200px;
+}
+.landing .courses .card .card-body {
+  background-color: #d1e0e0;
 }
 .landing .courses .card .card-body h4 {
   padding: 1rem 2rem 2rem 3rem;
@@ -355,10 +358,12 @@ nav .data ul .active {
   box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
   transition: all 0.5s ease-in-out;
   color: #ffffff;
-  background-color: #990033;
 }
 .landing .courses .card:hover:hover {
   transform: scale(1);
+}
+.landing .courses .card:hover .card-body {
+  background-color: #990033;
 }
 .landing .courses .card:hover .card-body h5 {
   color: #ffffff;
@@ -406,7 +411,7 @@ nav .data ul .active {
 }
 .landing .fun-facts {
   display: flex;
-  background-image: url("../img/fun-fact.jpg");
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url("../img/fun-fact.jpg");
   width: 100%;
   background-repeat: no-repeat;
   height: 400px;
@@ -424,6 +429,11 @@ nav .data ul .active {
   color: #990033;
   margin: 0 auto;
   text-align: center;
+}
+.landing .fun-facts .single-fact img {
+  width: 200px;
+  height: 200px;
+  margin: 0;
 }
 .button {
   background-color: #990033;
