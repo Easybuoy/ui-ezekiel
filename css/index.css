@@ -477,3 +477,29 @@ nav .data ul .active {
   background-color: #ffffff;
   border: 1px solid #990033;
 }
+footer {
+  background-color: #990033;
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: "Stylish", sans-serif;
+}
+footer .contact-info {
+  padding: 2rem 0;
+}
+footer .contact-info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .contact-info a i {
+  padding: 0 5rem;
+}
+footer .contact-info a i:hover {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+footer .contact-info a i:hover:hover {
+  transform: scale(1.2);
+}
