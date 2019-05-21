@@ -15,7 +15,6 @@
       url("../img/headerimg.jpg");
     background-repeat: no-repeat;
     height: 100vh;
-    opacity: 0.8;
     background-size: cover;
     background-position: center;
 
@@ -44,7 +43,6 @@
     }
 
     .card {
-      
       width: 22%;
       margin: 2rem 0;
 
@@ -54,7 +52,7 @@
       }
 
       .card-body {
-        background-color: #d1e0e0;
+        background-color: @secondaryColor;
         h4 {
           padding: 1rem 2rem 2rem 3rem;
           margin: 1rem 0;
@@ -97,7 +95,7 @@
         -webkit-box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
         box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
-        .transition(0.5s, 1);
+        .transition(0.5s, 1.05);
         color: @whiteColor;
 
         .card-body {
@@ -166,10 +164,8 @@
     height: 400px;
     background-size: cover;
     background-position: center;
-    opacity: 0.9;
-    z-index: 1;
     padding: 0 5rem;
-    clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+    clip-path: polygon(00% 0%, 100% 10%, 100% 100%, 0% 100%);
 
     .single-fact {
       display: flex;
@@ -185,8 +181,37 @@
       }
     }
   }
+
+  .register {
+    background-color: @secondaryColor;
+    width: 100%;
+
+    div {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 2rem auto;
+      text-align: center;
+      h2 {
+        font-family: @fontFamily2;
+        color: @primaryColor;
+      }
+
+      p {
+        padding: 2rem 0;
+        text-align: start;
+        font-family: @fontFamily1;
+        font-size: 2rem;
+      }
+      .button {
+        width: 30%;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 .button {
-  .button-mixin(@secondaryColor, @primaryColor);
+  .button-mixin(@whiteColor, @primaryColor);
 }

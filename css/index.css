@@ -285,7 +285,6 @@ nav .data ul .active {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../img/headerimg.jpg");
   background-repeat: no-repeat;
   height: 100vh;
-  opacity: 0.8;
   background-size: cover;
   background-position: center;
 }
@@ -360,7 +359,7 @@ nav .data ul .active {
   color: #ffffff;
 }
 .landing .courses .card:hover:hover {
-  transform: scale(1);
+  transform: scale(1.05);
 }
 .landing .courses .card:hover .card-body {
   background-color: #990033;
@@ -417,8 +416,6 @@ nav .data ul .active {
   height: 400px;
   background-size: cover;
   background-position: center;
-  opacity: 0.9;
-  z-index: 1;
   padding: 0 5rem;
   clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
 }
@@ -435,21 +432,48 @@ nav .data ul .active {
   height: 200px;
   margin: 0;
 }
+.landing .register {
+  background-color: #d1e0e0;
+  width: 100%;
+}
+.landing .register div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem auto;
+  text-align: center;
+}
+.landing .register div h2 {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  color: #990033;
+}
+.landing .register div p {
+  padding: 2rem 0;
+  text-align: start;
+  font-family: "Stylish", sans-serif;
+  font-size: 2rem;
+}
+.landing .register div .button {
+  width: 30%;
+  margin: 0 auto;
+}
 .button {
   background-color: #990033;
   border: none;
   padding: 1rem 2rem;
   font-size: 3rem;
-  color: #DBFF33;
+  color: #ffffff;
   font-family: "Stylish", sans-serif;
   outline: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .button:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .button:hover {
   color: #990033;
-  background-color: #DBFF33;
+  background-color: #ffffff;
+  border: 1px solid #990033;
 }
