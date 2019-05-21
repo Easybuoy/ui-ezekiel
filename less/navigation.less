@@ -6,7 +6,7 @@
     width: 40px;
     height: 12px;
     right: 0;
-    // z-index: 1;
+    z-index: 2;
     display: flex;
 
     span.one {
@@ -31,11 +31,18 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: @primaryColor;
-
+  
+  @media (min-width: 500px) {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  
   .logo {
     font-size: 3rem;
     margin: 1.4rem;
-    font-family: "Stylish", sans-serif;
+    font-family: @fontFamily1;
     color: @whiteColor;
     @media (max-width: 500px) {
       font-size: 2rem;
@@ -44,7 +51,7 @@ nav {
 
   .menu {
     @media (max-width: 500px) {
-      z-index: 0;
+      z-index: 1;    
       position: absolute;
       height: 100vh;
       width: 100%;

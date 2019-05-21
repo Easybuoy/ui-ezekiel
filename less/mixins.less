@@ -1,0 +1,25 @@
+.button-mixin(@color, @backgroundColor) {
+    background-color: @backgroundColor;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    color: @color;
+    font-family: @fontFamily1;
+    outline: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    .transition(.2s, 1.1);
+    
+    &:hover {
+        color: @backgroundColor;
+        background-color: @color;
+    }
+}
+
+.transition(@time, @scale) {
+    transition: all @time ease-in-out;
+
+    &:hover {
+        transform: scale(@scale);
+    }
+}
