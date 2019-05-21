@@ -1,0 +1,102 @@
+.toggle-button {
+  display: none;
+  @media (max-width: 500px) {
+    position: fixed;
+    margin: 1.4rem;
+    width: 40px;
+    height: 12px;
+    right: 0;
+    // z-index: 1;
+    display: flex;
+
+    span.one {
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      background-color: @whiteColor;
+    }
+
+    span.two {
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      background-color: @whiteColor;
+      margin-top: 12px;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @primaryColor;
+
+  .logo {
+    font-size: 3rem;
+    margin: 1.4rem;
+    font-family: "Stylish", sans-serif;
+    color: @whiteColor;
+    @media (max-width: 500px) {
+      font-size: 2rem;
+    }
+  }
+
+  .menu {
+    @media (max-width: 500px) {
+      z-index: 0;
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      top: -100%;
+    }
+  }
+
+  .data {
+    @media (max-width: 500px) {
+      padding: 5rem 0 0 2rem;
+      text-align: left;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      @media (max-width: 500px) {
+        flex-direction: column;
+      }
+
+      li {
+        color: @whiteColor;
+        font-size: 2.3rem;
+        margin: 0 2rem;
+        @media (max-width: 500px) {
+          margin: 2rem 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: @whiteColor;
+
+          &:hover {
+            color: @tetiaryColor;
+          }
+        }
+      }
+      .active {
+        color: @tetiaryColor;
+      }
+    }
+  }
+
+  
+}
+
+.search-input {
+    width: 100%;
+    color: @whiteColor;
+    background-color: @tetiaryColor;
+    border: none;
+    padding: 2rem 1rem;
+    font-size: 1.5rem; 
+    outline: none;
+}
