@@ -130,20 +130,25 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+  font-family: 'Oleo Script Swash Caps', cursive;
 }
 h2 {
   font-size: 3.2rem;
 }
 h3 {
   font-size: 2.8rem;
+  font-family: "Stylish", sans-serif;
 }
 a {
   font-family: "Stylish", sans-serif;
@@ -153,10 +158,9 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
   width: 100%;
-  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
 }
 .display {
   display: flex;
@@ -174,6 +178,7 @@ p {
     width: 40px;
     height: 12px;
     right: 0;
+    z-index: 2;
     display: flex;
   }
   .toggle-button span.one {
@@ -196,6 +201,14 @@ nav {
   align-items: center;
   background-color: #990033;
 }
+@media (min-width: 500px) {
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+}
 nav .logo {
   font-size: 3rem;
   margin: 1.4rem;
@@ -209,7 +222,7 @@ nav .logo {
 }
 @media (max-width: 500px) {
   nav .menu {
-    z-index: 0;
+    z-index: 1;
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -259,4 +272,50 @@ nav .data ul .active {
   padding: 2rem 1rem;
   font-size: 1.5rem;
   outline: none;
+}
+.landing {
+  width: 100%;
+  margin-top: 5rem;
+}
+@media (max-width: 500px) {
+  .landing {
+    margin-top: 0px;
+  }
+}
+.landing header {
+  width: 100%;
+  background-image: url("../img/headerimg.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  opacity: 0.8;
+  background-size: 100% 100%;
+}
+.landing header .header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.landing header .header-text h1 {
+  color: #ffffff;
+}
+.button {
+  background-color: #990033;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  color: #DBFF33;
+  font-family: "Stylish", sans-serif;
+  outline: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+.button:hover {
+  color: #990033;
+  background-color: #DBFF33;
 }
