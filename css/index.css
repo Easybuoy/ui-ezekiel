@@ -132,13 +132,6 @@ html,
 body {
   font-family: "Ubuntu", sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Russo One", sans-serif;
-}
 h1 {
   font-size: 4rem;
   font-family: 'Oleo Script Swash Caps', cursive;
@@ -148,6 +141,10 @@ h2 {
 }
 h3 {
   font-size: 2.8rem;
+  font-family: "Stylish", sans-serif;
+}
+h4 {
+  font-size: 2rem;
   font-family: "Stylish", sans-serif;
 }
 a {
@@ -299,6 +296,61 @@ nav .data ul .active {
 }
 .landing header .header-text h1 {
   color: #ffffff;
+}
+.landing .courses {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.landing .courses h3 {
+  width: 100%;
+  margin: 1rem 0;
+}
+.landing .courses .card {
+  background-color: #d1e0e0;
+  width: 22%;
+  margin: 2rem 0;
+}
+.landing .courses .card .card-img {
+  width: 100%;
+  height: 200px;
+}
+.landing .courses .card .card-body h4 {
+  padding: 1rem 2rem 2rem 3rem;
+  margin: 1rem 0;
+  font-weight: bolder;
+}
+.landing .courses .card .card-body p {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.landing .courses .card .card-body h5 {
+  color: #990033;
+  padding: 1rem 0 2rem 3rem;
+  font-size: 2rem;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+.landing .courses .card .card-body .lecturer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.landing .courses .card .card-body .lecturer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.landing .courses .card .card-body .lecturer h6 {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 2rem;
+  color: #990033;
+}
+.landing .courses .card:hover {
+  -webkit-box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
 }
 .button {
   background-color: #990033;
