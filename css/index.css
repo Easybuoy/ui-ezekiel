@@ -285,7 +285,8 @@ nav .data ul .active {
   background-repeat: no-repeat;
   height: 100vh;
   opacity: 0.8;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 .landing header .header-text {
   display: flex;
@@ -352,14 +353,77 @@ nav .data ul .active {
   -webkit-box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease-in-out;
   color: #ffffff;
   background-color: #990033;
+}
+.landing .courses .card:hover:hover {
+  transform: scale(1);
 }
 .landing .courses .card:hover .card-body h5 {
   color: #ffffff;
 }
 .landing .courses .card:hover .card-body .lecturer h6 {
   color: #ffffff;
+}
+.landing .testimony {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem 5rem;
+  justify-content: center;
+}
+.landing .testimony h3 {
+  color: #990033;
+}
+.landing .testimony .card {
+  display: flex;
+  padding: 4rem 2rem;
+  margin: 0 2rem;
+  width: 45%;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+}
+.landing .testimony .card img {
+  width: 25%;
+  height: 150px;
+  border-radius: 1rem;
+}
+.landing .testimony .card .testimony-content {
+  justify-content: center;
+  padding-left: 3rem;
+}
+.landing .testimony .card:hover {
+  -webkit-box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in-out;
+}
+.landing .testimony .card:hover:hover {
+  transform: scale(1);
+}
+.landing .fun-facts {
+  display: flex;
+  background-image: url("../img/fun-fact.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  z-index: 1;
+  padding: 0 5rem;
+  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+}
+.landing .fun-facts .single-fact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #990033;
+  margin: 0 auto;
+  text-align: center;
 }
 .button {
   background-color: #990033;
@@ -370,7 +434,6 @@ nav .data ul .active {
   font-family: "Stylish", sans-serif;
   outline: none;
   cursor: pointer;
-  border-radius: 1rem;
   transition: all 0.2s ease-in-out;
 }
 .button:hover {
