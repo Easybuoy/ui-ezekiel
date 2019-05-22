@@ -115,12 +115,45 @@
       text-align: center;
       font-weight: bolder;
     }
+
+    h2 {
+      color: @primaryColor;
+      font-family: @fontFamily2;
+      font-weight: bold;
+    }
+
     .contact-form {
       width: 45%;
-      background-color: pink;
       justify-content: center;
       margin: 0 auto;
       text-align: center;
+
+      .form {
+        display: flex;
+        flex-direction: column;
+
+        input,
+        textarea,
+        select {
+          border: 2px solid @primaryColor;
+          padding: 1rem 0;
+          margin: 1rem 0;
+          font-size: 2rem;
+          font-family: @fontFamily1;
+
+          &:focus {
+            color: @primaryColor;
+            outline: @primaryColor;
+          }
+        }
+
+        div {
+          .button {
+            width: 35%;
+            align-items: flex-end;
+          }
+        }
+      }
     }
 
     .contact-details {
@@ -129,10 +162,6 @@
       text-align: center;
       font-family: @fontFamily2;
       margin: 0 auto;
-
-      h2 {
-        color: @primaryColor;
-      }
 
       div {
         display: flex;

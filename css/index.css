@@ -763,21 +763,45 @@ footer .contact-info a i:hover:hover {
   text-align: center;
   font-weight: bolder;
 }
+.about .contact-us h2 {
+  color: #990033;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-weight: bold;
+}
 .about .contact-us .contact-form {
   width: 45%;
-  background-color: pink;
   justify-content: center;
   margin: 0 auto;
   text-align: center;
+}
+.about .contact-us .contact-form .form {
+  display: flex;
+  flex-direction: column;
+}
+.about .contact-us .contact-form .form input,
+.about .contact-us .contact-form .form textarea,
+.about .contact-us .contact-form .form select {
+  border: 2px solid #990033;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-family: "Stylish", sans-serif;
+}
+.about .contact-us .contact-form .form input:focus,
+.about .contact-us .contact-form .form textarea:focus,
+.about .contact-us .contact-form .form select:focus {
+  color: #990033;
+  outline: #990033;
+}
+.about .contact-us .contact-form .form div .button {
+  width: 35%;
+  align-items: flex-end;
 }
 .about .contact-us .contact-details {
   width: 45%;
   text-align: center;
   font-family: "Oleo Script Swash Caps", cursive;
   margin: 0 auto;
-}
-.about .contact-us .contact-details h2 {
-  color: #990033;
 }
 .about .contact-us .contact-details div {
   display: flex;
