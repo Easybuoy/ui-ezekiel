@@ -9,6 +9,13 @@
   cursor: pointer;
   .transition(0.3s, 1.05);
 
+  a {
+    text-decoration: none;
+    color: @whiteColor;
+    &:hover {
+      color: @backgroundColor;
+    }
+  }
   &:hover {
     color: @backgroundColor;
     background-color: @color;
@@ -41,7 +48,7 @@
   background-position: center;
 }
 
-.anchorTag() {
-  color: @whiteColor;
+.anchorTag(@color: @whiteColor) {
+  color: @color;
   text-decoration: none;
 }

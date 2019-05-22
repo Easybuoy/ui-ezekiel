@@ -625,6 +625,13 @@ footer .contact-info a i:hover:hover {
 .button:hover {
   transform: scale(1.05);
 }
+.button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.button a:hover {
+  color: #990033;
+}
 .button:hover {
   color: #990033;
   background-color: #ffffff;
