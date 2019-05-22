@@ -168,10 +168,6 @@ p {
 }
 header {
   width: 100%;
-  background-repeat: no-repeat;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
 }
 header .header-text {
   display: flex;
@@ -234,8 +230,8 @@ nav .logo {
   color: #ffffff;
 }
 nav .logo a {
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
 }
 nav .logo a:hover {
   color: #ff6666;
@@ -306,6 +302,7 @@ footer {
   font-size: 2rem;
   color: #ffffff;
   font-family: "Stylish", sans-serif;
+  z-index: 1;
 }
 footer .contact-info {
   padding: 2rem 0;
@@ -345,6 +342,11 @@ footer .contact-info a i:hover:hover {
 }
 .landing header {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../img/headerimg.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 .landing header .header-text h1 {
   color: #ffffff;
@@ -542,7 +544,7 @@ footer .contact-info a i:hover:hover {
 .landing .fun-facts {
   display: flex;
   flex-wrap: wrap;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url("../img/fun-fact.jpg");
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/fun-fact.jpg");
   width: 100%;
   background-repeat: no-repeat;
   height: 400px;
@@ -637,7 +639,84 @@ footer .contact-info a i:hover:hover {
 }
 .about header {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/svg/about\ us.svg");
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 .about header .header-text h1 {
   color: #990033;
+}
+.about .team {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/svg/team.svg");
+  width: 100%;
+  background-repeat: no-repeat;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  align-items: center;
+  padding: 0 3rem;
+}
+.about .team .card {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  align-items: center;
+  padding: 2rem 0;
+  margin: 2rem 2rem;
+  width: 30%;
+  -webkit-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+}
+.about .team .card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+.about .team .card .team-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.about .team .card .team-detail h3 {
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.about .team .card .team-detail a {
+  color: #ffffff;
+  text-decoration: none;
+  color: #000000;
+}
+.about .team .card .team-detail a i:hover {
+  transition: all 0.3s ease-in-out;
+  color: #990033;
+}
+.about .team .card .team-detail a i:hover:hover {
+  transform: scale(1.2);
+}
+.about .team .card .team-detail p {
+  font-family: "Oleo Script Swash Caps", cursive;
+  color: #990033;
+  width: 100%;
+  padding-top: 1rem;
+}
+.about .team .card:hover {
+  -webkit-box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
+}
+.about .contact-us {
+  margin-bottom: 2rem;
+  background-color: red;
+  width: 100%;
 }

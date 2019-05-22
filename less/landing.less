@@ -5,13 +5,7 @@
     margin-top: 0px;
   }
   header {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(255, 255, 255, 0.1),
-        rgba(255, 255, 255, 0.1)
-      ),
-      url("../img/headerimg.jpg");
-
+    .backgroundImage("../img/headerimg.jpg", 0.1, 100vh);
     .header-text {
       h1 {
         color: @whiteColor;
@@ -204,17 +198,7 @@
   .fun-facts {
     display: flex;
     flex-wrap: wrap;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(255, 255, 255, 0.7),
-        rgba(255, 255, 255, 0.8)
-      ),
-      url("../img/fun-fact.jpg");
-    width: 100%;
-    background-repeat: no-repeat;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
+    .backgroundImage("../img/fun-fact.jpg", 0.8, 400px);
     padding: 0 5rem;
     clip-path: polygon(00% 0%, 100% 10%, 100% 100%, 0% 100%);
     @media (max-width: 1145px) {

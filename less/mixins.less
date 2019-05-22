@@ -26,3 +26,22 @@
     transform: scale(@scale);
   }
 }
+
+.backgroundImage(@url, @opacity, @height) {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, @opacity),
+      rgba(255, 255, 255, @opacity)
+    ),
+    url(@url);
+  width: 100%;
+  background-repeat: no-repeat;
+  height: @height;
+  background-size: cover;
+  background-position: center;
+}
+
+.anchorTag() {
+  color: @whiteColor;
+  text-decoration: none;
+}
