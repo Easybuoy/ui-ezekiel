@@ -55,3 +55,20 @@ p {
 .text-center {
   text-align: center;
 }
+
+header {
+  width: 100%;
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    h1 {
+      @media @phone {
+        font-size: 4rem;
+      }
+    }
+  }
+}

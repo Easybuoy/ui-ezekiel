@@ -166,6 +166,22 @@ p {
 .text-center {
   text-align: center;
 }
+header {
+  width: 100%;
+}
+header .header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header .header-text h1 {
+    font-size: 4rem;
+  }
+}
 .toggle-button {
   display: none;
 }
@@ -212,6 +228,13 @@ nav .logo {
   margin: 1.4rem;
   font-family: "Stylish", sans-serif;
   color: #ffffff;
+}
+nav .logo a {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav .logo a:hover {
+  color: #ff6666;
 }
 @media (max-width: 500px) {
   nav .logo {
@@ -271,6 +294,43 @@ nav .data ul .active {
   font-size: 1.5rem;
   outline: none;
 }
+footer {
+  background-color: #990033;
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: "Stylish", sans-serif;
+  z-index: 1;
+}
+footer .contact-info {
+  padding: 2rem 0;
+}
+footer .contact-info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .contact-info a i {
+  padding: 0 5rem;
+}
+@media (max-width: 800px) {
+  footer .contact-info a i {
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 500px) {
+  footer .contact-info a i {
+    padding: 0 1.5rem;
+  }
+}
+footer .contact-info a i:hover {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+footer .contact-info a i:hover:hover {
+  transform: scale(1.2);
+}
 .landing {
   width: 100%;
   margin-top: 5rem;
@@ -281,28 +341,15 @@ nav .data ul .active {
   }
 }
 .landing header {
-  width: 100%;
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../img/headerimg.jpg");
+  width: 100%;
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
-.landing header .header-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  height: 100vh;
-  align-items: center;
-}
 .landing header .header-text h1 {
   color: #ffffff;
-}
-@media (max-width: 500px) {
-  .landing header .header-text h1 {
-    font-size: 4rem;
-  }
 }
 .landing .courses {
   width: 100%;
@@ -314,6 +361,7 @@ nav .data ul .active {
   width: 100%;
   margin: 1rem 0;
   font-size: 4rem;
+  font-weight: bolder;
 }
 .landing .courses .card {
   width: 23%;
@@ -432,10 +480,10 @@ nav .data ul .active {
   width: 100%;
   margin-bottom: 2rem;
   font-size: 4rem;
+  font-weight: bolder;
 }
 .landing .testimony .card {
   display: flex;
-  flex-wrap: wrap;
   padding: 4rem 2rem;
   margin: 0 2rem;
   width: 45%;
@@ -450,6 +498,7 @@ nav .data ul .active {
     width: 100%;
     margin: 3rem auto;
     padding: 3rem 3rem;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 500px) {
@@ -479,6 +528,12 @@ nav .data ul .active {
   justify-content: center;
   padding-left: 3rem;
 }
+@media (max-width: 800px) {
+  .landing .testimony .card .testimony-content {
+    padding: 2rem 3rem;
+    text-align: center;
+  }
+}
 .landing .testimony .card:hover {
   -webkit-box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
@@ -491,7 +546,7 @@ nav .data ul .active {
 .landing .fun-facts {
   display: flex;
   flex-wrap: wrap;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url("../img/fun-fact.jpg");
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/fun-fact.jpg");
   width: 100%;
   background-repeat: no-repeat;
   height: 400px;
@@ -580,39 +635,185 @@ nav .data ul .active {
     font-size: 1.5rem;
   }
 }
-footer {
-  background-color: #990033;
+.about {
+  margin-top: 5rem;
   width: 100%;
-  padding: 2rem 0;
-  text-align: center;
-  font-size: 2rem;
-  color: #ffffff;
-  font-family: "Stylish", sans-serif;
 }
-footer .contact-info {
-  padding: 2rem 0;
+.about header {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/svg/about\ us.svg");
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
-footer .contact-info a {
-  color: #ffffff;
-  text-decoration: none;
+.about header .header-text h1 {
+  color: #990033;
 }
-footer .contact-info a i {
+.about header .header-text h4 {
   padding: 0 5rem;
 }
-@media (max-width: 800px) {
-  footer .contact-info a i {
-    padding: 0 3rem;
+.about .team {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/svg/team.svg");
+  width: 100%;
+  background-repeat: no-repeat;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  align-items: center;
+  padding: 0 3rem;
+}
+.about .team h3 {
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+}
+.about .team .card {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  align-items: center;
+  padding: 2rem 0;
+  margin: 2rem auto;
+  width: 30%;
+  -webkit-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 950px) {
+  .about .team .card {
+    width: 45%;
   }
 }
 @media (max-width: 500px) {
-  footer .contact-info a i {
-    padding: 0 1.5rem;
+  .about .team .card {
+    width: 100%;
   }
 }
-footer .contact-info a i:hover {
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
+.about .team .card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+  margin: 0 auto;
 }
-footer .contact-info a i:hover:hover {
+.about .team .card .team-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.about .team .card .team-detail h3 {
+  padding-bottom: 1rem;
+  width: 100%;
+}
+@media (max-width: 950px) {
+  .about .team .card .team-detail h3 {
+    font-size: 3rem;
+  }
+}
+.about .team .card .team-detail a {
+  color: #ffffff;
+  text-decoration: none;
+  color: #000000;
+}
+.about .team .card .team-detail a i:hover {
+  transition: all 0.3s ease-in-out;
+  color: #990033;
+}
+.about .team .card .team-detail a i:hover:hover {
   transform: scale(1.2);
+}
+.about .team .card .team-detail p {
+  font-family: "Oleo Script Swash Caps", cursive;
+  color: #990033;
+  width: 100%;
+  padding-top: 1rem;
+}
+.about .team .card:hover {
+  -webkit-box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in-out;
+}
+.about .team .card:hover:hover {
+  transform: scale(1);
+}
+.about .contact-us {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/svg/contact-us.svg");
+  background-repeat: no-repeat;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 3rem 3rem;
+}
+.about .contact-us h3 {
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+}
+.about .contact-us h2 {
+  color: #990033;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-weight: bold;
+}
+.about .contact-us .contact-form {
+  width: 45%;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.about .contact-us .contact-form .form {
+  display: flex;
+  flex-direction: column;
+}
+.about .contact-us .contact-form .form input,
+.about .contact-us .contact-form .form textarea,
+.about .contact-us .contact-form .form select {
+  border: 2px solid #990033;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-family: "Stylish", sans-serif;
+}
+.about .contact-us .contact-form .form input:focus,
+.about .contact-us .contact-form .form textarea:focus,
+.about .contact-us .contact-form .form select:focus {
+  color: #990033;
+  outline: #990033;
+}
+.about .contact-us .contact-form .form div .button {
+  width: 35%;
+  align-items: flex-end;
+}
+.about .contact-us .contact-details {
+  width: 45%;
+  text-align: center;
+  font-family: "Oleo Script Swash Caps", cursive;
+  margin: 0 auto;
+}
+.about .contact-us .contact-details div {
+  display: flex;
+  align-items: baseline;
+  padding: 3rem 0;
+}
+.about .contact-us .contact-details div i {
+  color: #990033;
+}
+.about .contact-us .contact-details div p {
+  padding-left: 5rem;
+  font-family: "Stylish", sans-serif;
+  font-size: 3rem;
+  justify-content: center;
 }
