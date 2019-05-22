@@ -648,6 +648,9 @@ footer .contact-info a i:hover:hover {
 .about header .header-text h1 {
   color: #990033;
 }
+.about header .header-text h4 {
+  padding: 0 5rem;
+}
 .about .team {
   display: flex;
   flex-wrap: wrap;
@@ -674,11 +677,21 @@ footer .contact-info a i:hover:hover {
   height: 350px;
   align-items: center;
   padding: 2rem 0;
-  margin: 2rem 2rem;
+  margin: 2rem auto;
   width: 30%;
   -webkit-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 950px) {
+  .about .team .card {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .about .team .card {
+    width: 100%;
+  }
 }
 .about .team .card img {
   width: 200px;
@@ -696,6 +709,11 @@ footer .contact-info a i:hover:hover {
 .about .team .card .team-detail h3 {
   padding-bottom: 1rem;
   width: 100%;
+}
+@media (max-width: 950px) {
+  .about .team .card .team-detail h3 {
+    font-size: 3rem;
+  }
 }
 .about .team .card .team-detail a {
   color: #ffffff;
@@ -719,6 +737,10 @@ footer .contact-info a i:hover:hover {
   -webkit-box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in-out;
+}
+.about .team .card:hover:hover {
+  transform: scale(1);
 }
 .about .contact-us {
   margin-bottom: 2rem;
