@@ -1,3 +1,6 @@
+// Initialize AOC plugin
+AOS.init();
+
 let timeLineMax = new TimelineMax({ paused: true });
 timeLineMax.to(".one", 0.8, {
   y: 6,
