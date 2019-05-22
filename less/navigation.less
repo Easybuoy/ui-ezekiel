@@ -1,7 +1,7 @@
 .toggle-button {
   display: none;
-  @media (max-width: 500px) {
-    position: fixed;
+  @media @phone {
+    // position: fixed;
     margin: 1.4rem;
     width: 40px;
     height: 12px;
@@ -31,7 +31,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: @primaryColor;
-  
+  width: 100%;
   @media (min-width: 500px) {
     position: fixed;
     top: 0;
@@ -44,13 +44,13 @@ nav {
     margin: 1.4rem;
     font-family: @fontFamily1;
     color: @whiteColor;
-    @media (max-width: 500px) {
+    @media @phone {
       font-size: 2rem;
     }
   }
 
   .menu {
-    @media (max-width: 500px) {
+    @media @phone {
       z-index: 1;    
       position: absolute;
       height: 100vh;
@@ -60,7 +60,7 @@ nav {
   }
 
   .data {
-    @media (max-width: 500px) {
+    @media @phone {
       padding: 5rem 0 0 2rem;
       text-align: left;
     }
@@ -68,7 +68,7 @@ nav {
     ul {
       list-style: none;
       display: flex;
-      @media (max-width: 500px) {
+      @media @phone {
         flex-direction: column;
       }
 
@@ -76,7 +76,7 @@ nav {
         color: @whiteColor;
         font-size: 2.3rem;
         margin: 0 2rem;
-        @media (max-width: 500px) {
+        @media @phone {
           margin: 2rem 0;
         }
 

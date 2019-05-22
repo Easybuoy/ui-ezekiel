@@ -8,12 +8,15 @@ footer {
   font-family: @fontFamily1;
   .contact-info {
     padding: 2rem 0;
+    
     a {
       color: @whiteColor;
       text-decoration: none;
       i {
         padding: 0 5rem;
-
+        @media @phone {
+            padding: 0 1rem;
+          }
         &:hover {
           .transition(0.5s, 1.2);
           cursor: pointer;
