@@ -46,8 +46,20 @@
     }
 
     .card {
-      width: 22%;
+      width: 23%;
       margin: 2rem 0;
+      @media (max-width: 1165px) {
+        width: 31%;
+      }
+
+      @media @tablet {
+        width: 45%;
+      }
+
+      @media (max-width: 550px) {
+        width: 90%;
+      }
+
       @media @phone {
         width: 90%;
         padding: 0 3rem;
@@ -85,8 +97,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          padding-bottom: 1rem;
-
+          padding: 0 1rem 1rem 1rem;
+          width: 100%;
           img {
             width: 50px;
             height: 50px;
@@ -129,17 +141,27 @@
   .testimony {
     display: flex;
     flex-wrap: wrap;
-    padding: 5rem 5rem;
+    padding: 5rem 0rem;
+    margin: 0 auto;
     justify-content: center;
+    @media @tablet {
+      width: 100%;
+      padding: 0 3rem;
+    }
+
     @media @phone {
       padding: 2rem 3rem;
     }
     h3 {
       color: @primaryColor;
+      width: 100%;
+      margin-bottom: 2rem;
+      font-size: 4rem;
     }
 
     .card {
       display: flex;
+      flex-wrap: wrap;
       padding: 4rem 2rem;
       margin: 0 2rem;
       width: 45%;
@@ -148,6 +170,13 @@
       -webkit-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
       box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+
+      @media @tablet {
+        width: 100%;
+        margin: 3rem auto;
+        padding: 3rem 3rem;
+      }
+
       @media @phone {
         width: 100%;
         margin: 3rem 0;
@@ -156,8 +185,15 @@
         width: 25%;
         height: 150px;
         border-radius: 1rem;
-        @media @phone {
+
+        @media @tablet {
           width: 35%;
+        }
+
+        @media (max-width: 580px) {
+          width: 90%;
+          height: 200px;
+          margin-bottom: 2rem;
         }
       }
       .testimony-content {
@@ -190,7 +226,7 @@
     background-position: center;
     padding: 0 5rem;
     clip-path: polygon(00% 0%, 100% 10%, 100% 100%, 0% 100%);
-    @media @phone {
+    @media (max-width: 1145px) {
       padding: 3rem 3rem;
       height: auto;
     }
@@ -219,12 +255,13 @@
     width: 100%;
 
     div {
-      width: 50%;
+    //   width: 50%;
 
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin: 2rem auto;
+      padding: 0 5rem;
       text-align: center;
       @media @phone {
         width: 100%;
@@ -242,7 +279,6 @@
         font-size: 2rem;
       }
       .button {
-        width: 30%;
         margin: 0 auto;
       }
     }
