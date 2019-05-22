@@ -213,6 +213,13 @@ nav .logo {
   font-family: "Stylish", sans-serif;
   color: #ffffff;
 }
+nav .logo a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav .logo a:hover {
+  color: #ff6666;
+}
 @media (max-width: 500px) {
   nav .logo {
     font-size: 2rem;
@@ -270,6 +277,42 @@ nav .data ul .active {
   padding: 2rem 1rem;
   font-size: 1.5rem;
   outline: none;
+}
+footer {
+  background-color: #990033;
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: "Stylish", sans-serif;
+}
+footer .contact-info {
+  padding: 2rem 0;
+}
+footer .contact-info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .contact-info a i {
+  padding: 0 5rem;
+}
+@media (max-width: 800px) {
+  footer .contact-info a i {
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 500px) {
+  footer .contact-info a i {
+    padding: 0 1.5rem;
+  }
+}
+footer .contact-info a i:hover {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+footer .contact-info a i:hover:hover {
+  transform: scale(1.2);
 }
 .landing {
   width: 100%;
@@ -580,39 +623,6 @@ nav .data ul .active {
     font-size: 1.5rem;
   }
 }
-footer {
-  background-color: #990033;
-  width: 100%;
-  padding: 2rem 0;
-  text-align: center;
-  font-size: 2rem;
-  color: #ffffff;
-  font-family: "Stylish", sans-serif;
-}
-footer .contact-info {
-  padding: 2rem 0;
-}
-footer .contact-info a {
-  color: #ffffff;
-  text-decoration: none;
-}
-footer .contact-info a i {
-  padding: 0 5rem;
-}
-@media (max-width: 800px) {
-  footer .contact-info a i {
-    padding: 0 3rem;
-  }
-}
-@media (max-width: 500px) {
-  footer .contact-info a i {
-    padding: 0 1.5rem;
-  }
-}
-footer .contact-info a i:hover {
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-}
-footer .contact-info a i:hover:hover {
-  transform: scale(1.2);
+.about {
+  margin-top: 5rem;
 }
