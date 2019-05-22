@@ -1,0 +1,288 @@
+.landing {
+  width: 100%;
+  margin-top: 5rem;
+  @media @phone {
+    margin-top: 0px;
+  }
+  header {
+    width: 100%;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url("../img/headerimg.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      h1 {
+        color: @whiteColor;
+        @media @phone {
+          font-size: 4rem;
+        }
+      }
+      align-items: center;
+    }
+  }
+
+  .courses {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    h3 {
+      width: 100%;
+      margin: 1rem 0;
+      font-size: 4rem;
+    }
+
+    .card {
+      width: 23%;
+      margin: 2rem 0;
+      @media (max-width: 1165px) {
+        width: 31%;
+      }
+
+      @media @tablet {
+        width: 45%;
+      }
+
+      @media (max-width: 550px) {
+        width: 90%;
+      }
+
+      @media @phone {
+        width: 90%;
+        padding: 0 3rem;
+        -webkit-box-shadow: 0px 2px 18px -7px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 2px 18px -7px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 2px 18px -7px rgba(0, 0, 0, 0.75);
+        padding: 3rem 0;
+      }
+      .card-img {
+        width: 100%;
+        height: 200px;
+      }
+
+      .card-body {
+        background-color: @secondaryColor;
+        h4 {
+          padding: 1rem 2rem 2rem 3rem;
+          margin: 1rem 0;
+          font-weight: bolder;
+        }
+
+        p {
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
+
+        h5 {
+          color: @primaryColor;
+          padding: 1rem 0 2rem 3rem;
+          font-size: 2rem;
+          font-family: @fontFamily2;
+        }
+
+        .lecturer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 1rem 1rem 1rem;
+          width: 100%;
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+
+          h6 {
+            font-family: @fontFamily2;
+            font-size: 2rem;
+            color: @primaryColor;
+          }
+        }
+      }
+
+      &:hover {
+        -webkit-box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
+        .transition(0.5s, 1.05);
+        color: @whiteColor;
+
+        .card-body {
+          background-color: @primaryColor;
+          h5 {
+            color: @whiteColor;
+          }
+          .lecturer h6 {
+            color: @whiteColor;
+          }
+        }
+        @media @phone {
+          -webkit-box-shadow: 0;
+          -moz-box-shadow: 0;
+          box-shadow: 0;
+        }
+      }
+    }
+  }
+
+  .testimony {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0rem;
+    margin: 0 auto;
+    justify-content: center;
+    @media @tablet {
+      width: 100%;
+      padding: 0 3rem;
+    }
+
+    @media @phone {
+      padding: 2rem 3rem;
+    }
+    h3 {
+      color: @primaryColor;
+      width: 100%;
+      margin-bottom: 2rem;
+      font-size: 4rem;
+    }
+
+    .card {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 4rem 2rem;
+      margin: 0 2rem;
+      width: 45%;
+      align-items: center;
+      justify-content: center;
+      -webkit-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+
+      @media @tablet {
+        width: 100%;
+        margin: 3rem auto;
+        padding: 3rem 3rem;
+      }
+
+      @media @phone {
+        width: 100%;
+        margin: 3rem 0;
+      }
+      img {
+        width: 25%;
+        height: 150px;
+        border-radius: 1rem;
+
+        @media @tablet {
+          width: 35%;
+        }
+
+        @media (max-width: 580px) {
+          width: 90%;
+          height: 200px;
+          margin-bottom: 2rem;
+        }
+      }
+      .testimony-content {
+        justify-content: center;
+        padding-left: 3rem;
+      }
+
+      &:hover {
+        -webkit-box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
+        .transition(0.3s, 1);
+      }
+    }
+  }
+
+  .fun-facts {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url("../img/fun-fact.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    padding: 0 5rem;
+    clip-path: polygon(00% 0%, 100% 10%, 100% 100%, 0% 100%);
+    @media (max-width: 1145px) {
+      padding: 3rem 3rem;
+      height: auto;
+    }
+
+    .single-fact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: @primaryColor;
+      margin: 0 auto;
+      text-align: center;
+      img {
+        width: 200px;
+        height: 200px;
+        margin: 0;
+        @media @phone {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+
+  .register {
+    background-color: @secondaryColor;
+    width: 100%;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 2rem auto;
+      padding: 0 5rem;
+      text-align: center;
+      @media @phone {
+        width: 100%;
+        padding: 0 3rem;
+      }
+      h2 {
+        font-family: @fontFamily2;
+        color: @primaryColor;
+      }
+
+      p {
+        padding: 2rem 0;
+        text-align: start;
+        font-family: @fontFamily1;
+        font-size: 2rem;
+      }
+      .button {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.button {
+  .button-mixin(@whiteColor, @primaryColor);
+}
