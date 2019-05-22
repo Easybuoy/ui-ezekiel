@@ -17,7 +17,7 @@ timeLineMax.to(".menu", 0.5, {
   ease: Expo.easeInOut
 });
 
-timeLineMax.staggerFrom(".menu ul li", 0.5, { ease: Expo.easeOut }, 0.3);
+timeLineMax.staggerFrom(".menu ul li", 0.5, { ease: Expo.easeOut }, 0.1);
 
 timeLineMax.reverse();
 

@@ -134,7 +134,7 @@ body {
 }
 h1 {
   font-size: 5rem;
-  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: "Oleo Script Swash Caps", cursive;
 }
 h2 {
   font-size: 3.2rem;
@@ -171,7 +171,6 @@ p {
 }
 @media (max-width: 500px) {
   .toggle-button {
-    position: fixed;
     margin: 1.4rem;
     width: 40px;
     height: 12px;
@@ -198,6 +197,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #990033;
+  width: 100%;
 }
 @media (min-width: 500px) {
   nav {
@@ -292,11 +292,17 @@ nav .data ul .active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   height: 100vh;
   align-items: center;
 }
 .landing header .header-text h1 {
   color: #ffffff;
+}
+@media (max-width: 500px) {
+  .landing header .header-text h1 {
+    font-size: 4rem;
+  }
 }
 .landing .courses {
   width: 100%;
@@ -310,8 +316,33 @@ nav .data ul .active {
   font-size: 4rem;
 }
 .landing .courses .card {
-  width: 22%;
+  width: 23%;
   margin: 2rem 0;
+}
+@media (max-width: 1165px) {
+  .landing .courses .card {
+    width: 31%;
+  }
+}
+@media (max-width: 800px) {
+  .landing .courses .card {
+    width: 45%;
+  }
+}
+@media (max-width: 550px) {
+  .landing .courses .card {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .landing .courses .card {
+    width: 90%;
+    padding: 0 3rem;
+    -webkit-box-shadow: 0px 2px 18px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 18px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 18px -7px rgba(0, 0, 0, 0.75);
+    padding: 3rem 0;
+  }
 }
 .landing .courses .card .card-img {
   width: 100%;
@@ -333,13 +364,14 @@ nav .data ul .active {
   color: #990033;
   padding: 1rem 0 2rem 3rem;
   font-size: 2rem;
-  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: "Oleo Script Swash Caps", cursive;
 }
 .landing .courses .card .card-body .lecturer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1rem;
+  padding: 0 1rem 1rem 1rem;
+  width: 100%;
 }
 .landing .courses .card .card-body .lecturer img {
   width: 50px;
@@ -347,7 +379,7 @@ nav .data ul .active {
   border-radius: 50%;
 }
 .landing .courses .card .card-body .lecturer h6 {
-  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: "Oleo Script Swash Caps", cursive;
   font-size: 2rem;
   color: #990033;
 }
@@ -370,17 +402,40 @@ nav .data ul .active {
 .landing .courses .card:hover .card-body .lecturer h6 {
   color: #ffffff;
 }
+@media (max-width: 500px) {
+  .landing .courses .card:hover {
+    -webkit-box-shadow: 0;
+    -moz-box-shadow: 0;
+    box-shadow: 0;
+  }
+}
 .landing .testimony {
   display: flex;
   flex-wrap: wrap;
-  padding: 5rem 5rem;
+  padding: 5rem 0rem;
+  margin: 0 auto;
   justify-content: center;
+}
+@media (max-width: 800px) {
+  .landing .testimony {
+    width: 100%;
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .landing .testimony {
+    padding: 2rem 3rem;
+  }
 }
 .landing .testimony h3 {
   color: #990033;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-size: 4rem;
 }
 .landing .testimony .card {
   display: flex;
+  flex-wrap: wrap;
   padding: 4rem 2rem;
   margin: 0 2rem;
   width: 45%;
@@ -390,10 +445,35 @@ nav .data ul .active {
   -moz-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
 }
+@media (max-width: 800px) {
+  .landing .testimony .card {
+    width: 100%;
+    margin: 3rem auto;
+    padding: 3rem 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .landing .testimony .card {
+    width: 100%;
+    margin: 3rem 0;
+  }
+}
 .landing .testimony .card img {
   width: 25%;
   height: 150px;
   border-radius: 1rem;
+}
+@media (max-width: 800px) {
+  .landing .testimony .card img {
+    width: 35%;
+  }
+}
+@media (max-width: 580px) {
+  .landing .testimony .card img {
+    width: 90%;
+    height: 200px;
+    margin-bottom: 2rem;
+  }
 }
 .landing .testimony .card .testimony-content {
   justify-content: center;
@@ -410,6 +490,7 @@ nav .data ul .active {
 }
 .landing .fun-facts {
   display: flex;
+  flex-wrap: wrap;
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url("../img/fun-fact.jpg");
   width: 100%;
   background-repeat: no-repeat;
@@ -418,6 +499,12 @@ nav .data ul .active {
   background-position: center;
   padding: 0 5rem;
   clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+}
+@media (max-width: 1145px) {
+  .landing .fun-facts {
+    padding: 3rem 3rem;
+    height: auto;
+  }
 }
 .landing .fun-facts .single-fact {
   display: flex;
@@ -432,20 +519,32 @@ nav .data ul .active {
   height: 200px;
   margin: 0;
 }
+@media (max-width: 500px) {
+  .landing .fun-facts .single-fact img {
+    width: 150px;
+    height: 150px;
+  }
+}
 .landing .register {
   background-color: #d1e0e0;
   width: 100%;
 }
 .landing .register div {
-  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 2rem auto;
+  padding: 0 5rem;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .landing .register div {
+    width: 100%;
+    padding: 0 3rem;
+  }
+}
 .landing .register div h2 {
-  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: "Oleo Script Swash Caps", cursive;
   color: #990033;
 }
 .landing .register div p {
@@ -455,7 +554,6 @@ nav .data ul .active {
   font-size: 2rem;
 }
 .landing .register div .button {
-  width: 30%;
   margin: 0 auto;
 }
 .button {
@@ -477,6 +575,11 @@ nav .data ul .active {
   background-color: #ffffff;
   border: 1px solid #990033;
 }
+@media (max-width: 500px) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
 footer {
   background-color: #990033;
   width: 100%;
@@ -495,6 +598,16 @@ footer .contact-info a {
 }
 footer .contact-info a i {
   padding: 0 5rem;
+}
+@media (max-width: 800px) {
+  footer .contact-info a i {
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 500px) {
+  footer .contact-info a i {
+    padding: 0 1.5rem;
+  }
 }
 footer .contact-info a i:hover {
   transition: all 0.5s ease-in-out;
