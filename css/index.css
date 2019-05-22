@@ -774,6 +774,11 @@ footer .contact-info a i:hover:hover {
   margin: 0 auto;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .about .contact-us .contact-form {
+    width: 100%;
+  }
+}
 .about .contact-us .contact-form .form {
   display: flex;
   flex-direction: column;
@@ -797,11 +802,22 @@ footer .contact-info a i:hover:hover {
   width: 35%;
   align-items: flex-end;
 }
+@media (max-width: 415px) {
+  .about .contact-us .contact-form .form div .button {
+    width: 40%;
+  }
+}
 .about .contact-us .contact-details {
   width: 45%;
   text-align: center;
   font-family: "Oleo Script Swash Caps", cursive;
   margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .about .contact-us .contact-details {
+    width: 100%;
+    margin-top: 5rem;
+  }
 }
 .about .contact-us .contact-details div {
   display: flex;
@@ -816,4 +832,9 @@ footer .contact-info a i:hover:hover {
   font-family: "Stylish", sans-serif;
   font-size: 3rem;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .about .contact-us .contact-details div p {
+    font-size: 1.8rem;
+  }
 }
