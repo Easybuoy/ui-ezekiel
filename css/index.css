@@ -356,6 +356,7 @@ footer .contact-info a i:hover:hover {
   }
 }
 .landing header {
+  width: 100%;
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../img/headerimg.jpg");
   width: 100%;
   background-repeat: no-repeat;
@@ -365,6 +366,11 @@ footer .contact-info a i:hover:hover {
 }
 .landing header .header-text h1 {
   color: #ffffff;
+}
+@media (max-width: 500px) {
+  .landing header .header-text h1 {
+    font-size: 4rem;
+  }
 }
 .landing .courses {
   width: 100%;
@@ -499,6 +505,7 @@ footer .contact-info a i:hover:hover {
 }
 .landing .testimony .card {
   display: flex;
+  flex-wrap: wrap;
   padding: 4rem 2rem;
   margin: 0 2rem;
   width: 45%;
@@ -513,7 +520,6 @@ footer .contact-info a i:hover:hover {
     width: 100%;
     margin: 3rem auto;
     padding: 3rem 3rem;
-    flex-wrap: wrap;
   }
 }
 @media (max-width: 500px) {
@@ -542,12 +548,6 @@ footer .contact-info a i:hover:hover {
 .landing .testimony .card .testimony-content {
   justify-content: center;
   padding-left: 3rem;
-}
-@media (max-width: 800px) {
-  .landing .testimony .card .testimony-content {
-    padding: 2rem 3rem;
-    text-align: center;
-  }
 }
 .landing .testimony .card:hover {
   -webkit-box-shadow: 0px 2px 18px -6px rgba(0, 0, 0, 0.75);
@@ -654,9 +654,14 @@ footer .contact-info a i:hover:hover {
     font-size: 1.5rem;
   }
 }
-.about {
-  margin-top: 5rem;
+footer {
+  background-color: #990033;
   width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: "Stylish", sans-serif;
 }
 .about header {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/svg/about\ us.svg");
@@ -666,8 +671,29 @@ footer .contact-info a i:hover:hover {
   background-size: cover;
   background-position: center;
 }
-.about header .header-text h1 {
-  color: #990033;
+footer .contact-info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .contact-info a i {
+  padding: 0 5rem;
+}
+@media (max-width: 800px) {
+  footer .contact-info a i {
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 500px) {
+  footer .contact-info a i {
+    padding: 0 1.5rem;
+  }
+}
+footer .contact-info a i:hover {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+footer .contact-info a i:hover:hover {
+  transform: scale(1.2);
 }
 .about header .header-text h4 {
   padding: 0 5rem;

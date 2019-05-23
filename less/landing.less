@@ -7,9 +7,18 @@
   header {
     .backgroundImage("../img/headerimg.jpg", 0.1, 100vh);
     .header-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
       h1 {
         color: @whiteColor;
+        @media @phone {
+          font-size: 4rem;
+        }
       }
+      align-items: center;
     }
   }
 
@@ -133,7 +142,6 @@
     @media @phone {
       padding: 2rem 3rem;
     }
-
     h3 {
       color: @primaryColor;
       width: 100%;
@@ -144,6 +152,7 @@
 
     .card {
       display: flex;
+      flex-wrap: wrap;
       padding: 4rem 2rem;
       margin: 0 2rem;
       width: 45%;
@@ -157,7 +166,6 @@
         width: 100%;
         margin: 3rem auto;
         padding: 3rem 3rem;
-        flex-wrap: wrap;
       }
 
       @media @phone {
@@ -182,10 +190,6 @@
       .testimony-content {
         justify-content: center;
         padding-left: 3rem;
-        @media @tablet {
-          padding: 2rem 3rem;
-          text-align: center;
-        }
       }
 
       &:hover {
