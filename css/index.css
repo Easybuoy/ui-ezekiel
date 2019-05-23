@@ -182,6 +182,21 @@ header .header-text {
     font-size: 4rem;
   }
 }
+input,
+textarea,
+select {
+  border: 2px solid #990033;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-family: "Stylish", sans-serif;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  color: #990033;
+  outline: #990033;
+}
 .toggle-button {
   display: none;
 }
@@ -432,9 +447,9 @@ footer .contact-info a i:hover:hover {
   color: #990033;
 }
 .landing .courses .card:hover {
-  -webkit-box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 18px -10px rgba(0, 0, 0, 0.75);
   transition: all 0.5s ease-in-out;
   color: #ffffff;
 }
@@ -625,6 +640,10 @@ footer .contact-info a i:hover:hover {
 .button:hover {
   transform: scale(1.05);
 }
+.button a {
+  text-decoration: none;
+  color: inherit;
+}
 .button:hover {
   color: #990033;
   background-color: #ffffff;
@@ -783,21 +802,6 @@ footer .contact-info a i:hover:hover {
   display: flex;
   flex-direction: column;
 }
-.about .contact-us .contact-form .form input,
-.about .contact-us .contact-form .form textarea,
-.about .contact-us .contact-form .form select {
-  border: 2px solid #990033;
-  padding: 1rem 0;
-  margin: 1rem 0;
-  font-size: 2rem;
-  font-family: "Stylish", sans-serif;
-}
-.about .contact-us .contact-form .form input:focus,
-.about .contact-us .contact-form .form textarea:focus,
-.about .contact-us .contact-form .form select:focus {
-  color: #990033;
-  outline: #990033;
-}
 .about .contact-us .contact-form .form div .button {
   width: 35%;
   align-items: flex-end;
@@ -835,6 +839,151 @@ footer .contact-info a i:hover:hover {
 }
 @media (max-width: 500px) {
   .about .contact-us .contact-details div p {
+    font-size: 1.8rem;
+  }
+}
+.about .newsletter {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/svg/newsletter.svg");
+  background-repeat: no-repeat;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: baseline;
+  text-align: center;
+  margin: auto;
+  padding: 3rem 0;
+}
+.about .newsletter h3 {
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+}
+.about .newsletter form {
+  width: 100%;
+}
+.about .newsletter form input {
+  width: 40%;
+}
+.about .newsletter form .button {
+  margin-left: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.about .newsletter form .button:hover {
+  transform: scale(1.01);
+}
+.contact {
+  margin-top: 5rem;
+  width: 100%;
+}
+.contact header {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/svg/about\ us.svg");
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.contact header .header-text h1 {
+  color: #990033;
+}
+.contact header .header-text h4 {
+  padding: 0 5rem;
+}
+.contact .contact-us {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/svg/contact-us.svg");
+  background-repeat: no-repeat;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 3rem 3rem;
+}
+.contact .contact-us h3 {
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+}
+.contact .contact-us h2 {
+  color: #990033;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-weight: bold;
+}
+.contact .contact-us .contact-form {
+  width: 45%;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .contact .contact-us .contact-form {
+    width: 100%;
+  }
+}
+.contact .contact-us .contact-form .form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-us .contact-form .form input,
+.contact .contact-us .contact-form .form textarea,
+.contact .contact-us .contact-form .form select {
+  border: 2px solid #990033;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-family: "Stylish", sans-serif;
+}
+.contact .contact-us .contact-form .form input:focus,
+.contact .contact-us .contact-form .form textarea:focus,
+.contact .contact-us .contact-form .form select:focus {
+  color: #990033;
+  outline: #990033;
+}
+.contact .contact-us .contact-form .form div .button {
+  width: 35%;
+  align-items: flex-end;
+}
+@media (max-width: 415px) {
+  .contact .contact-us .contact-form .form div .button {
+    width: 40%;
+  }
+}
+.contact .contact-us .contact-details {
+  width: 45%;
+  text-align: center;
+  font-family: "Oleo Script Swash Caps", cursive;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .contact .contact-us .contact-details {
+    width: 100%;
+    margin-top: 5rem;
+  }
+}
+.contact .contact-us .contact-details div {
+  display: flex;
+  align-items: baseline;
+  padding: 3rem 0;
+}
+.contact .contact-us .contact-details div i {
+  color: #990033;
+}
+.contact .contact-us .contact-details div p {
+  padding-left: 5rem;
+  font-family: "Stylish", sans-serif;
+  font-size: 3rem;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .contact .contact-us .contact-details div p {
     font-size: 1.8rem;
   }
 }
