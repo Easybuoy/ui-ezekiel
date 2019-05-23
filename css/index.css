@@ -423,7 +423,7 @@ footer .contact-info a i:hover:hover {
 }
 .landing {
   width: 100%;
-  margin-top: 5.5rem;
+  margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -726,8 +726,14 @@ footer .contact-info a i:hover:hover {
 .about header .header-text h4 {
   padding: 0 5rem;
   line-height: 3.5rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #202746;
+}
+@media (max-width: 900px) {
+  .about header .header-text h4 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
 .about .team {
   display: flex;
@@ -1010,7 +1016,8 @@ footer .contact-info a i:hover:hover {
   outline: #990033;
 }
 .contact .contact-us .contact-form .form div .button {
-  width: 35%;
+  width: 40%;
+  font-size: 2rem;
   align-items: flex-end;
 }
 @media (max-width: 415px) {
