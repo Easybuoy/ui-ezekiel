@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#990033" />
+    <meta name="Description" content="School In The Cloud" />
     <title>School In The Cloud</title>
+    <link rel="manifest" href="manifest.json" />
     <link rel="icon" type="image/png" sizes="114x114" href="img/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="114x114"
+      href="img/favicon.png"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Stylish&display=swap"
       rel="stylesheet"
@@ -44,9 +53,10 @@
             <li><a href="index.html">Home</a></li>
             <li><a class="active" href="about.html">About</a></li>
             <li><a href="contact-us.html">Contact</a></li>
-            <li><a href="#">Blog</a></li>
             <li>
-              <a class="search" href="#"><i class="fas fa-search"></i></a>
+              <a class="search" href="#" aria-label="Search"
+                ><i class="fas fa-search"></i
+              ></a>
             </li>
           </ul>
         </div>
@@ -58,10 +68,14 @@
         <div class="header-text">
           <h1>About Us</h1>
           <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            quibusdam sit vero voluptates odit consectetur id nam, molestiae
-            praesentium nisi autem ea exercitationem odio dolor incidunt
-            officia, eius quo illo.
+            School in the Cloud is a platform that trains senior volunteers to
+            teach students in a group or individual setting. This helps kids in
+            communities with high student to teacher ratios. It also provides
+            retired volunteers a sense of purpose and meaning in their day to
+            day life when they find themselves with more free time. The platform
+            also connects volunteers with the students. The aim is to help close
+            the achievement gap by connecting students with available, qualified
+            volunteer mentors.
           </h4>
         </div>
       </header>
@@ -189,6 +203,38 @@
         </div>
       </section>
 
+      <section class="fun-facts" data-aos="zoom-in-up">
+        <div class="single-fact">
+          <img src="img/svg/winner.svg" alt="Awards" />
+          <h3>20</h3>
+          <p>Awards Won</p>
+        </div>
+
+        <div class="single-fact">
+          <img src="img/svg/volunteers.svg" alt="Volunteer" />
+          <h3>250+</h3>
+          <p>Active Volunteers</p>
+        </div>
+
+        <div class="single-fact">
+          <img src="img/svg/students.svg" alt="Graduate" />
+          <h3>12k+</h3>
+          <p>Active Students</p>
+        </div>
+
+        <div class="single-fact">
+          <img src="img/svg/graduate.svg" alt="Graduate" />
+          <h3>100k+</h3>
+          <p>Graduates</p>
+        </div>
+
+        <div class="single-fact">
+          <img src="img/svg/video.svg" alt="Video" />
+          <h3>302+</h3>
+          <p>Video Resources</p>
+        </div>
+      </section>
+
       <section class="newsletter">
         <h3>Newsletter</h3>
         <form data-aos="zoom-in">
@@ -199,10 +245,18 @@
 
       <footer>
         <div class="contact-info">
-          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-          <a href="#"><i class="fab fa-github fa-2x"></i></a>
+          <a href="#" aria-label="Linkedin link"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+          <a href="#" aria-label="Twitter link"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+          <a href="#" aria-label="Facebook link"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a href="#" aria-label="Github link"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
         </div>
         &copy; 2019, School in the cloud
       </footer>

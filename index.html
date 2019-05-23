@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#990033" />
+    <meta name="Description" content="School In The Cloud" />
     <title>School In The Cloud</title>
+    <link rel="manifest" href="manifest.json" />
     <link rel="icon" type="image/png" sizes="114x114" href="img/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="114x114"
+      href="img/favicon.png"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Stylish&display=swap"
       rel="stylesheet"
@@ -36,7 +45,7 @@
         <span class="two"></span>
       </div>
 
-      <div class="logo">School In The Cloud</div>
+      <div class="logo"><a href="index.html">School In The Cloud</a></div>
 
       <div class="menu">
         <div class="data">
@@ -44,9 +53,10 @@
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact-us.html">Contact</a></li>
-            <li><a href="#">Blog</a></li>
             <li>
-              <a class="search" href="#"><i class="fas fa-search"></i></a>
+              <a class="search" href="#" aria-label="Search"
+                ><i class="fas fa-search"></i
+              ></a>
             </li>
           </ul>
         </div>
@@ -55,14 +65,26 @@
 
     <div class="container landing">
       <header>
+        <!-- <div class="search-div">
+          <input class="search-input" placeholder="Search" />
+          
+          <button class="search-button">
+              <i class="fas fa-times fa-3x"></i>
+          </button>
+        </div> -->
         <div class="header-text">
           <h1>Welcome To School In The Cloud</h1>
+          <p>
+            Limitless learning, more possibilities with expert volunteer
+            facilitators. Our mission is to inspire a group of individuals with
+            a focus of learning.
+          </p>
           <br />
-          <button class="button"><a href="#">Register Now</a></button>
+          <a href="#courses"><button class="button">Learn More</button></a>
         </div>
       </header>
 
-      <section class="courses">
+      <section id="courses" class="courses">
         <h3 class="text-center">Our Courses</h3>
         <div class="card">
           <img
@@ -232,23 +254,21 @@
           <div class="testimony-content">
             <h3>Keli Santos</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
-              debitis placeat, fugit officia delectus, ratione illo, ipsam
-              reiciendis suscipit laboriosam animi sunt sapiente maxime
-              voluptatibus possimus? Commodi doloribus perspiciatis veniam.
+              I can positively say School In The Cloud has made me a better
+              person. It has helped me develop a positive attitude my studies.
             </p>
           </div>
         </div>
 
-        <div class="card" data-aos="fade-left">
+        <div class="card" data-aos="fade-right">
           <img src="img/testimony2.jpg" alt="Testimony Image" />
           <div class="testimony-content">
             <h3>Wallace Chuck</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
-              debitis placeat, fugit officia delectus, ratione illo, ipsam
-              reiciendis suscipit laboriosam animi sunt sapiente maxime
-              voluptatibus possimus? Commodi doloribus perspiciatis veniam.
+              I am very happy with the support being offered so far. The support
+              team is very prompt in response and is knowledgeable. It really
+              touched me when the volunteer officer took personal interest in
+              the issue I was facing, and resolved it in no time.
             </p>
           </div>
         </div>
@@ -290,20 +310,26 @@
         <div>
           <h2>Join Our Community Now</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequuntur quo, animi pariatur autem iure rem sequi quia
-            aspernatur nam deleniti distinctio, nostrum debitis fuga commodi et
-            voluptatem excepturi, minus error?
+            Learn at your own pace Programs are available in fall, spring, and
+            summer semesters.
           </p>
-          <button class="button"><a href="#">Register Now</a></button>
+          <a href="#"><button class="button">Register Now</button></a>
         </div>
       </section>
       <footer>
         <div class="contact-info">
-          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-          <a href="#"><i class="fab fa-github fa-2x"></i></a>
+          <a href="#" aria-label="Linkedin link"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+          <a href="#" aria-label="Twitter link"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+          <a href="#" aria-label="Facebook link"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a href="#" aria-label="Github link"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
         </div>
         &copy; 2019, School in the cloud
       </footer>

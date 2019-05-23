@@ -130,6 +130,7 @@ html {
 }
 html,
 body {
+  width: 100%;
   font-family: "Ubuntu", sans-serif;
 }
 h1 {
@@ -197,6 +198,78 @@ select:focus {
   color: #990033;
   outline: #990033;
 }
+.fun-facts {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/fun-fact.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  padding: 0 5rem;
+  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+}
+@media (max-width: 1145px) {
+  .fun-facts {
+    padding: 3rem 3rem;
+    height: auto;
+  }
+}
+.fun-facts .single-fact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #990033;
+  margin: 0 auto;
+  text-align: center;
+}
+.fun-facts .single-fact img {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+}
+@media (max-width: 500px) {
+  .fun-facts .single-fact img {
+    width: 150px;
+    height: 150px;
+  }
+}
+.search-div {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  width: 30%;
+  background-color: #ffffff;
+  padding: 0 3rem;
+}
+@media (max-width: 800px) {
+  .search-div {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .search-div {
+    width: 80%;
+  }
+}
+.search-input {
+  width: 50%;
+  display: flex;
+  color: #ffffff;
+  background-color: #ffffff;
+  border: none;
+  padding: 2rem 1rem;
+  font-size: 1.5rem;
+  outline: none;
+  margin: 0 auto;
+}
+.search-button {
+  background-color: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 .toggle-button {
   display: none;
 }
@@ -244,6 +317,11 @@ nav .logo {
   font-family: "Stylish", sans-serif;
   color: #ffffff;
 }
+@media (max-width: 630px) {
+  nav .logo {
+    font-size: 2rem;
+  }
+}
 nav .logo a {
   color: #ffffff;
   text-decoration: none;
@@ -285,6 +363,12 @@ nav .data ul li {
   font-size: 2.3rem;
   margin: 0 2rem;
 }
+@media (max-width: 630px) {
+  nav .data ul li {
+    font-size: 1.8rem;
+    margin: 0 1.5rem;
+  }
+}
 @media (max-width: 500px) {
   nav .data ul li {
     margin: 2rem 0;
@@ -299,15 +383,6 @@ nav .data ul li a:hover {
 }
 nav .data ul .active {
   color: #ff6666;
-}
-.search-input {
-  width: 100%;
-  color: #ffffff;
-  background-color: #ff6666;
-  border: none;
-  padding: 2rem 1rem;
-  font-size: 1.5rem;
-  outline: none;
 }
 footer {
   background-color: #990033;
@@ -348,7 +423,9 @@ footer .contact-info a i:hover:hover {
 }
 .landing {
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 5.5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 @media (max-width: 500px) {
   .landing {
@@ -356,13 +433,20 @@ footer .contact-info a i:hover:hover {
   }
 }
 .landing header {
-  width: 100%;
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../img/headerimg.jpg");
   width: 100%;
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
   background-position: center;
+}
+.landing header .header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
 }
 .landing header .header-text h1 {
   color: #ffffff;
@@ -371,6 +455,12 @@ footer .contact-info a i:hover:hover {
   .landing header .header-text h1 {
     font-size: 4rem;
   }
+}
+.landing header .header-text p {
+  color: #ffffff;
+  font-size: 2.3rem;
+  font-family: "Stylish", sans-serif;
+  margin-top: 1rem;
 }
 .landing .courses {
   width: 100%;
@@ -558,43 +648,6 @@ footer .contact-info a i:hover:hover {
 .landing .testimony .card:hover:hover {
   transform: scale(1);
 }
-.landing .fun-facts {
-  display: flex;
-  flex-wrap: wrap;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/fun-fact.jpg");
-  width: 100%;
-  background-repeat: no-repeat;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  padding: 0 5rem;
-  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
-}
-@media (max-width: 1145px) {
-  .landing .fun-facts {
-    padding: 3rem 3rem;
-    height: auto;
-  }
-}
-.landing .fun-facts .single-fact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #990033;
-  margin: 0 auto;
-  text-align: center;
-}
-.landing .fun-facts .single-fact img {
-  width: 200px;
-  height: 200px;
-  margin: 0;
-}
-@media (max-width: 500px) {
-  .landing .fun-facts .single-fact img {
-    width: 150px;
-    height: 150px;
-  }
-}
 .landing .register {
   background-color: #d1e0e0;
   width: 100%;
@@ -619,7 +672,7 @@ footer .contact-info a i:hover:hover {
 }
 .landing .register div p {
   padding: 2rem 0;
-  text-align: start;
+  text-align: center;
   font-family: "Stylish", sans-serif;
   font-size: 2rem;
 }
@@ -654,14 +707,9 @@ footer .contact-info a i:hover:hover {
     font-size: 1.5rem;
   }
 }
-footer {
-  background-color: #990033;
+.about {
+  margin-top: 5rem;
   width: 100%;
-  padding: 2rem 0;
-  text-align: center;
-  font-size: 2rem;
-  color: #ffffff;
-  font-family: "Stylish", sans-serif;
 }
 .about header {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/svg/about\ us.svg");
@@ -671,32 +719,14 @@ footer {
   background-size: cover;
   background-position: center;
 }
-footer .contact-info a {
-  color: #ffffff;
-  text-decoration: none;
-}
-footer .contact-info a i {
-  padding: 0 5rem;
-}
-@media (max-width: 800px) {
-  footer .contact-info a i {
-    padding: 0 3rem;
-  }
-}
-@media (max-width: 500px) {
-  footer .contact-info a i {
-    padding: 0 1.5rem;
-  }
-}
-footer .contact-info a i:hover {
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-}
-footer .contact-info a i:hover:hover {
-  transform: scale(1.2);
+.about header .header-text h1 {
+  color: #990033;
 }
 .about header .header-text h4 {
   padding: 0 5rem;
+  line-height: 3.5rem;
+  font-size: 3rem;
+  color: #202746;
 }
 .about .team {
   display: flex;
@@ -894,6 +924,11 @@ footer .contact-info a i:hover:hover {
 }
 .about .newsletter form input {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .about .newsletter form input {
+    width: 50%;
+  }
 }
 .about .newsletter form .button {
   margin-left: 2rem;

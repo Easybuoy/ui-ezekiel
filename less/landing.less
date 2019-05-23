@@ -1,6 +1,8 @@
 .landing {
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 5.5rem;
+  display: flex;
+  flex-wrap: wrap;
   @media @phone {
     margin-top: 0px;
   }
@@ -17,6 +19,12 @@
         @media @phone {
           font-size: 4rem;
         }
+      }
+      p {
+        color: @whiteColor;
+        font-size: 2.3rem;
+        font-family: @fontFamily1;
+        margin-top: 1rem;
       }
       align-items: center;
     }
@@ -201,36 +209,6 @@
     }
   }
 
-  .fun-facts {
-    display: flex;
-    flex-wrap: wrap;
-    .backgroundImage("../img/fun-fact.jpg", 0.8, 400px);
-    padding: 0 5rem;
-    clip-path: polygon(00% 0%, 100% 10%, 100% 100%, 0% 100%);
-    @media (max-width: 1145px) {
-      padding: 3rem 3rem;
-      height: auto;
-    }
-
-    .single-fact {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      color: @primaryColor;
-      margin: 0 auto;
-      text-align: center;
-      img {
-        width: 200px;
-        height: 200px;
-        margin: 0;
-        @media @phone {
-          width: 150px;
-          height: 150px;
-        }
-      }
-    }
-  }
-
   .register {
     background-color: @secondaryColor;
     width: 100%;
@@ -253,7 +231,7 @@
 
       p {
         padding: 2rem 0;
-        text-align: start;
+        text-align: center;
         font-family: @fontFamily1;
         font-size: 2rem;
       }
