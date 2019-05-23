@@ -356,13 +356,20 @@ footer .contact-info a i:hover:hover {
   }
 }
 .landing header {
-  width: 100%;
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../img/headerimg.jpg");
   width: 100%;
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
   background-position: center;
+}
+.landing header .header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
 }
 .landing header .header-text h1 {
   color: #ffffff;
@@ -371,6 +378,11 @@ footer .contact-info a i:hover:hover {
   .landing header .header-text h1 {
     font-size: 4rem;
   }
+}
+.landing header .header-text p {
+  color: #ffffff;
+  font-size: 2.3rem;
+  font-family: "Stylish", sans-serif;
 }
 .landing .courses {
   width: 100%;
@@ -654,14 +666,9 @@ footer .contact-info a i:hover:hover {
     font-size: 1.5rem;
   }
 }
-footer {
-  background-color: #990033;
+.about {
+  margin-top: 5rem;
   width: 100%;
-  padding: 2rem 0;
-  text-align: center;
-  font-size: 2rem;
-  color: #ffffff;
-  font-family: "Stylish", sans-serif;
 }
 .about header {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/svg/about\ us.svg");
@@ -671,29 +678,8 @@ footer {
   background-size: cover;
   background-position: center;
 }
-footer .contact-info a {
-  color: #ffffff;
-  text-decoration: none;
-}
-footer .contact-info a i {
-  padding: 0 5rem;
-}
-@media (max-width: 800px) {
-  footer .contact-info a i {
-    padding: 0 3rem;
-  }
-}
-@media (max-width: 500px) {
-  footer .contact-info a i {
-    padding: 0 1.5rem;
-  }
-}
-footer .contact-info a i:hover {
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-}
-footer .contact-info a i:hover:hover {
-  transform: scale(1.2);
+.about header .header-text h1 {
+  color: #990033;
 }
 .about header .header-text h4 {
   padding: 0 5rem;
@@ -894,6 +880,11 @@ footer .contact-info a i:hover:hover {
 }
 .about .newsletter form input {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .about .newsletter form input {
+    width: 50%;
+  }
 }
 .about .newsletter form .button {
   margin-left: 2rem;
