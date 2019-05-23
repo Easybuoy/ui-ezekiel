@@ -9,6 +9,10 @@
   cursor: pointer;
   .transition(0.3s, 1.05);
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   &:hover {
     color: @backgroundColor;
     background-color: @color;
@@ -25,4 +29,23 @@
   &:hover {
     transform: scale(@scale);
   }
+}
+
+.backgroundImage(@url, @opacity, @height) {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, @opacity),
+      rgba(255, 255, 255, @opacity)
+    ),
+    url(@url);
+  width: 100%;
+  background-repeat: no-repeat;
+  height: @height;
+  background-size: cover;
+  background-position: center;
+}
+
+.anchorTag(@color: @whiteColor) {
+  color: @color;
+  text-decoration: none;
 }

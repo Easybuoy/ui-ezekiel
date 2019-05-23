@@ -55,3 +55,35 @@ p {
 .text-center {
   text-align: center;
 }
+
+header {
+  width: 100%;
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    h1 {
+      @media @phone {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+input,
+textarea,
+select {
+  border: 2px solid @primaryColor;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-family: @fontFamily1;
+
+  &:focus {
+    color: @primaryColor;
+    outline: @primaryColor;
+  }
+}
