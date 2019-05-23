@@ -240,7 +240,7 @@ select:focus {
   margin: 0 auto;
   justify-content: space-evenly;
   width: 30%;
-  background-color: #ffffff;
+  background-color: #d1e0e0;
   padding: 0 3rem;
 }
 @media (max-width: 800px) {
@@ -257,7 +257,7 @@ select:focus {
   width: 50%;
   display: flex;
   color: #ffffff;
-  background-color: #ffffff;
+  background-color: #d1e0e0;
   border: none;
   padding: 2rem 1rem;
   font-size: 1.5rem;
