@@ -1,6 +1,6 @@
 // Initialize AOC plugin
 AOS.init({
-    duration: 1500,
+  duration: 1500
 });
 
 let timeLineMax = new TimelineMax({ paused: true });
