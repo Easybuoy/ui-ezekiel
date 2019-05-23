@@ -592,6 +592,7 @@ footer .contact-info a i:hover:hover {
   margin-bottom: 2rem;
   font-size: 4rem;
   font-weight: bolder;
+  text-align: center;
 }
 .landing .testimony .card {
   display: flex;
