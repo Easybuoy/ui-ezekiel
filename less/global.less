@@ -9,6 +9,7 @@ html {
 
 html,
 body {
+  width: 100%;
   font-family: "Ubuntu", sans-serif;
   // color: @main-font-color;
 }
@@ -117,3 +118,38 @@ select {
     }
   }
 }
+
+.search-div {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  width: 30%;
+  background-color: @whiteColor;
+  padding: 0 3rem;
+  @media @tablet {
+    width: 50%;
+  }
+  @media @phone {
+    width: 80%;
+  }
+}
+
+.search-input {
+  width: 50%;
+  display: flex;
+  color: @whiteColor;
+  background-color: @whiteColor;
+  border: none;
+  padding: 2rem 1rem;
+  font-size: 1.5rem;
+  outline: none;
+  margin: 0 auto;
+}
+
+.search-button {
+  background-color: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+

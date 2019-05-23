@@ -35,17 +35,36 @@ toggleButton.addEventListener("click", () => {
 });
 
 // Search Bar
-// let search = document.querySelector(".search");
-// search.addEventListener("click", () => {
-//   let searchInput = document.querySelector(".search-input");
+let search = document.querySelector(".search");
+search.addEventListener("click", () => {
+  let searchInput = document.querySelector(".search-input");
 
-//   let body = document.querySelector("body");
-//   if (searchInput === null) {
-//     let input = document.createElement("input");
-//     input.classList.add("search-input");
-//     input.placeholder = "Search";
-//     body.prepend(input);
-//   } else {
-//     body.removeChild(searchInput);
-//   }
-// });
+  let header = document.querySelector("header");
+  if (searchInput === null) {
+    let div = document.createElement("div");
+    div.classList.add("search-div");
+    let input = document.createElement("input");
+    input.classList.add("search-input");
+    input.placeholder = "Search";
+    
+    let button = document.createElement('button');
+    button.classList.add('search-button');
+    let i = document.createElement('i');
+    i.classList.add('fas');
+    i.classList.add('fa-times');
+    i.classList.add('fa-3x');
+    button.appendChild(i);
+    button.onclick = () => {
+      return removeSearch();
+    };
+    div.appendChild(input);
+    div.appendChild(button);
+    header.prepend(div);
+  }
+});
+
+const removeSearch = () => {
+  let header = document.querySelector("header");
+  let searchInput = document.querySelector(".search-div");
+  header.removeChild(searchInput);
+}
