@@ -87,3 +87,33 @@ select {
     outline: @primaryColor;
   }
 }
+
+.fun-facts {
+  display: flex;
+  flex-wrap: wrap;
+  .backgroundImage("../img/fun-fact.jpg", 0.8, 400px);
+  padding: 0 5rem;
+  clip-path: polygon(00% 0%, 100% 10%, 100% 100%, 0% 100%);
+  @media (max-width: 1145px) {
+    padding: 3rem 3rem;
+    height: auto;
+  }
+
+  .single-fact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: @primaryColor;
+    margin: 0 auto;
+    text-align: center;
+    img {
+      width: 200px;
+      height: 200px;
+      margin: 0;
+      @media @phone {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}

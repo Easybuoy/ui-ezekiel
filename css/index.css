@@ -197,6 +197,43 @@ select:focus {
   color: #990033;
   outline: #990033;
 }
+.fun-facts {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/fun-fact.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  padding: 0 5rem;
+  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+}
+@media (max-width: 1145px) {
+  .fun-facts {
+    padding: 3rem 3rem;
+    height: auto;
+  }
+}
+.fun-facts .single-fact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #990033;
+  margin: 0 auto;
+  text-align: center;
+}
+.fun-facts .single-fact img {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+}
+@media (max-width: 500px) {
+  .fun-facts .single-fact img {
+    width: 150px;
+    height: 150px;
+  }
+}
 .toggle-button {
   display: none;
 }
@@ -571,43 +608,6 @@ footer .contact-info a i:hover:hover {
 .landing .testimony .card:hover:hover {
   transform: scale(1);
 }
-.landing .fun-facts {
-  display: flex;
-  flex-wrap: wrap;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/fun-fact.jpg");
-  width: 100%;
-  background-repeat: no-repeat;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  padding: 0 5rem;
-  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
-}
-@media (max-width: 1145px) {
-  .landing .fun-facts {
-    padding: 3rem 3rem;
-    height: auto;
-  }
-}
-.landing .fun-facts .single-fact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #990033;
-  margin: 0 auto;
-  text-align: center;
-}
-.landing .fun-facts .single-fact img {
-  width: 200px;
-  height: 200px;
-  margin: 0;
-}
-@media (max-width: 500px) {
-  .landing .fun-facts .single-fact img {
-    width: 150px;
-    height: 150px;
-  }
-}
 .landing .register {
   background-color: #d1e0e0;
   width: 100%;
@@ -632,7 +632,7 @@ footer .contact-info a i:hover:hover {
 }
 .landing .register div p {
   padding: 2rem 0;
-  text-align: start;
+  text-align: center;
   font-family: "Stylish", sans-serif;
   font-size: 2rem;
 }
@@ -684,6 +684,9 @@ footer .contact-info a i:hover:hover {
 }
 .about header .header-text h4 {
   padding: 0 5rem;
+  line-height: 3.5rem;
+  font-size: 3rem;
+  color: #202746;
 }
 .about .team {
   display: flex;
